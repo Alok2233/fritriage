@@ -19,13 +19,8 @@ export default function Navbar() {
         <h1 className="text-base font-semibold text-gray-900 font-display">{title}</h1>
       </div>
       <div className="flex items-center gap-2">
-        <button className="w-8 h-8 rounded-lg flex items-center justify-center text-gray-400 hover:text-gray-600 hover:bg-gray-50 transition-colors">
-          <Search size={16} />
-        </button>
-        <button className="w-8 h-8 rounded-lg flex items-center justify-center text-gray-400 hover:text-gray-600 hover:bg-gray-50 transition-colors relative">
-          <Bell size={16} />
-          <span className="absolute top-1.5 right-1.5 w-1.5 h-1.5 bg-green-500 rounded-full" />
-        </button>
+        
+        
       </div>
     </header>
   )

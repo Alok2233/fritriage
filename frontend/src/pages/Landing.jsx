@@ -76,16 +76,7 @@ export default function Landing() {
 
       {/* Hero */}
       <section className="max-w-6xl mx-auto px-6 pt-24 pb-20 text-center">
-        {/* Badge */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.4 }}
-          className="inline-flex items-center gap-2 bg-green-50 border border-green-200 text-green-700 text-xs font-semibold px-3.5 py-1.5 rounded-full mb-8"
-        >
-          <span className="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse" />
-          Powered by CrewAI + Claude
-        </motion.div>
+       
 
         <motion.h1
           initial={{ opacity: 0, y: 24 }}
@@ -129,53 +120,6 @@ export default function Landing() {
           </button>
         </motion.div>
 
-        {/* Hero visual */}
-        <motion.div
-          initial={{ opacity: 0, y: 32 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.4 }}
-          className="mt-16 rounded-2xl border border-gray-100 shadow-panel overflow-hidden"
-        >
-          <div className="bg-gray-50 border-b border-gray-100 px-4 py-3 flex items-center gap-2">
-            <div className="w-3 h-3 rounded-full bg-red-300" />
-            <div className="w-3 h-3 rounded-full bg-yellow-300" />
-            <div className="w-3 h-3 rounded-full bg-green-300" />
-            <span className="ml-2 text-xs text-gray-400 font-mono">fintriage.app/dashboard/triage</span>
-          </div>
-          <div className="bg-white p-8 grid grid-cols-2 gap-6 text-left">
-            <div className="space-y-3">
-              <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide">Customer Message</p>
-              <div className="bg-gray-50 rounded-xl p-4 border border-gray-100 text-sm text-gray-600 leading-relaxed">
-                "I was charged twice for my subscription last Tuesday — $49.99 appeared on my Visa card twice. 
-                Please investigate and issue a refund immediately."
-              </div>
-              <div className="flex items-center justify-end">
-                <div className="inline-flex items-center gap-2 bg-green-600 text-white text-xs font-medium px-4 py-2 rounded-lg">
-                  <Zap size={13} /> Run Triage
-                </div>
-              </div>
-            </div>
-            <div className="space-y-3">
-              <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide">Analysis Results</p>
-              <div className="space-y-2">
-                <div className="flex items-center justify-between bg-gray-50 rounded-lg px-3.5 py-2.5 border border-gray-100">
-                  <span className="text-xs text-gray-500">Intent</span>
-                  <span className="text-xs font-semibold text-gray-900">Duplicate Charge / Refund</span>
-                </div>
-                <div className="flex items-center justify-between bg-gray-50 rounded-lg px-3.5 py-2.5 border border-gray-100">
-                  <span className="text-xs text-gray-500">Urgency</span>
-                  <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-red-50 border border-red-200 text-red-700 text-xs font-semibold">
-                    <span className="w-1.5 h-1.5 rounded-full bg-red-500" /> High
-                  </span>
-                </div>
-                <div className="flex items-center justify-between bg-gray-50 rounded-lg px-3.5 py-2.5 border border-gray-100">
-                  <span className="text-xs text-gray-500">Amount</span>
-                  <span className="text-xs font-semibold text-gray-900 font-mono">$49.99 × 2</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </motion.div>
       </section>
 
       {/* Features */}
@@ -212,7 +156,7 @@ export default function Landing() {
           <FadeIn>
             <div className="inline-flex items-center gap-2 mb-6 text-sm text-gray-500">
               <CheckCircle2 size={16} className="text-green-500" />
-              No setup required — connect your backend and go
+           
             </div>
             <h2 className="font-display text-3xl font-700 text-gray-900 mb-4 tracking-tight">
               Ready to streamline support?

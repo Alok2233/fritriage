@@ -14,7 +14,7 @@ const nav = [
   { label: 'Dashboard', icon: LayoutDashboard, to: '/dashboard' },
   { label: 'Triage Analyzer', icon: Zap, to: '/dashboard/triage' },
   { label: 'Tickets', icon: Ticket, to: '/dashboard/tickets' },
-  { label: 'Settings', icon: Settings, to: '/dashboard/settings' },
+  
 ]
 
 export default function Sidebar() {
